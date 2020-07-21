@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /**
+     * Show the success page after registration.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function success()
+    {
+        return view('success');
+    }
 }

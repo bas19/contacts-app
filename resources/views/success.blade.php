@@ -5,16 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
+                <div class="card-header">Success!</div>
+                <div class="card-body text-center">
+                   <h1 class="mt-5">Thank you for registering.</h1>
+                   <a href="/home" class="btn btn-lg btn-primary mt-5 mb-5">Continue</a>
                 </div>
             </div>
         </div>

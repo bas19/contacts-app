@@ -36,4 +36,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    /**
+     * User with contact relation
+     * 
+     * @param none
+     */
+    public function contacts()
+    {
+        $this->hasMany('App\Contacts', 'created_by');
+    }
 }

@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('contacts/search/{text}', 'Api\ContactController@search');
+Route::get('contacts/user/{id}', 'Api\ContactController@showByUserId');
+Route::resource('contacts', 'Api\ContactController');
